@@ -6,9 +6,16 @@ function Modal( { title } ) {
         <div className="modal">
         <p className="modal__title">{title}</p>
         <div className="modal__buttons">
-            <button onClick={() => console.log('Cancel')} className="btn btn__cancel">Cancel</button>
-            <button onClick={() => console.log('Confirm')} className="btn">Confirm</button>
-        </div>
+        <button
+          onClick={cancelModal}
+          className="btn btn__cancel"
+        >
+          Cancel
+        </button>
+        <button onClick={confirmModal} className="btn btn__confirm">
+          Confirm
+        </button>
+       </div>
     </div>
     <div className="backdrop" />
       <h2>Modal</h2>
